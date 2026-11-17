@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lead Form to WhatsApp</title>
+<meta name="description" content="Send every Facebook lead-form lead an instant WhatsApp message, with an AI call brief for your sales rep.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <div class="brand"><b>AI Growth Telugu</b> · Rajesh</div>
+  <h1>Facebook leads ఇక Excel లో పడుకోవు ⚡</h1>
+  <p class="lede">Facebook lead form → instant WhatsApp → AI call brief మీ sales rep కి. n8n తో setup steps, WhatsApp template, AI prompt ఇదిగో.</p>
+
+  <h2>1. n8n setup steps</h2>
+  <ol class="steps">
+    <li><b>Facebook Lead Ads Trigger</b> node: మీ Facebook page + lead form connect చేయండి. ప్రతి కొత్త lead కి fire అవుతుంది.</li>
+    <li><b>WhatsApp Business Cloud</b> node → <i>Send template</i>: form లోని phone number కి. కొత్త lead కి మొదటి message Meta-<b>approved template</b> అయ్యి ఉండాలి (WhatsApp Manager లో ఒకసారి approve చేయించండి).</li>
+    <li><b>AI node</b> (OpenAI / Gemini / Claude): కింద ఉన్న call-brief prompt తో, form fields ఉపయోగించి.</li>
+    <li><b>Sales rep alert</b>: WhatsApp / Telegram / email node తో AI brief + click-to-call link.</li>
+    <li>Optional: <b>Google Sheets</b> node తో ప్రతి lead log చేయండి (Excel download అవసరం లేదు).</li>
+    <li>Workflow ని <b>Active</b> చేయండి. Live కి ముందు Meta <i>Lead Ads Testing Tool</i> తో test చేయండి.</li>
+  </ol>
+
+  <h2>2. WhatsApp template (Utility category)</h2>
+  <div class="card copyable"><pre>నమస్తే {{1}} 🙏 {{2}} గురించి enquiry చేసినందుకు thanks!
+మా team {{3}} లోపు call చేస్తుంది. మీకు ఏ time convenient? Reply చేయండి.</pre></div>
+  <p class="note">{{1}} = name · {{2}} = course / project / service · {{3}} = "1 గంట" లేదా "ఈ రోజు సాయంత్రం"</p>
+
+  <h2>3. AI call-brief prompt</h2>
+  <div class="card copyable"><pre>You are a sales assistant for a [business type] in Andhra Pradesh / Telangana.
+A new lead just filled our Facebook form: [form fields].
+Write a call brief for my sales rep in simple Telugu with English business words:
+1) Who they are and what they want (1 line)
+2) The 2 best questions to ask on the call
+3) One likely objection and how to answer it
+Under 60 words. No greetings.</pre></div>
+
+  <p class="note">మీ leads ఏ business కి? (coaching / real estate / clinic / ఇంకేదైనా) Instagram DM లో చెప్పండి, ఆ business కి సరిపోయే WhatsApp template పంపిస్తాను.</p>
+
+  <a class="cta" href="https://www.instagram.com/aigrowthtelugu/">ఇలాంటి AI sales tips కోసం <span>@aigrowthtelugu</span> ని follow చేయండి →</a>
+  <footer>AI Growth Telugu · AI for Sales, Marketing &amp; Business Growth in Telugu</footer>
+</main>
+<script src="../copy.js"></script>
+</body>
+</html>
