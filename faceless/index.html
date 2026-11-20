@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="te">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faceless Reel Setup</title>
+<meta name="description" content="How the @aigrowthtelugu Reels are made without a face: 6 steps, the tools, how hard each one is, and an easy version for shop owners.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <div class="brand"><b>AI Growth Telugu</b> · Rajesh · AI SALES DESK 04/100</div>
+  <h1>Face చూపించకుండా Reels: మా 6 steps 🎬</h1>
+  <p class="lede">@aigrowthtelugu Reels లో నా face ఉండదు. Voice నాదే, కానీ AI clone. ప్రతి step లో ఏ tool వాడుతున్నాం, ఎంత కష్టం అనేది నిజాయితీగా కింద ఉంది. చివర్లో, code లేకుండా మీ shop కి ఒక easy version కూడా ఉంది.</p>
+
+  <h2>1. 💡 Viral idea <small>· medium</small></h2>
+  <div class="card">
+    <p>మా niche లో creators చివరి ~36 Reels data తీసుకుని, ప్రతి Reel views ని ఆ creator సాధారణ views (median) తో పోలుస్తాం. 3 రెట్లు, 10 రెట్లు ఆడిన Reels నే ideas గా తీసుకుంటాం. <b>Structure మాత్రమే, వాళ్ళ words కాదు.</b></p>
+    <p><b>Tools:</b> Claude + Composio → GetAnyAPI (Instagram public data). ఒక call కి paise లో ఖర్చు; 22 creators scan కి సుమారు $0.07.</p>
+  </div>
+
+  <h2>2. ✍️ Script <small>· easy</small></h2>
+  <div class="card">
+    <p>Claude మా brand voice rules (Telugu + English business words, slow intro లేదు, మొదటి line నే hook) తో script రాస్తుంది. 40 seconds లోపు ఉంచుతాం.</p>
+  </div>
+
+  <h2>3. 🔍 Fact check <small>· easy</small></h2>
+  <div class="card">
+    <p>Script లో ప్రతి number కి original source వెతుకుతాం: ఎవరు, ఏ year, ఎంత మంది మీద. <b>Source లేకపోతే, cut.</b> ఉదాహరణ: "80% sales 5th follow-up తర్వాతే" కి సరైన study దొరకలేదు, అందుకే వాడలేదు.</p>
+  </div>
+
+  <h2>4. 🎙️ AI voice <small>· technical</small></h2>
+  <div class="card">
+    <p>IndicF5 (AI4Bharat, open-source) నా 10–15 seconds recording నుంచి నా voice ని clone చేస్తుంది. Laptop CPU మీద slow: ఒక second speech కి సుమారు 2 నిమిషాలు, అంటే ఒక Reel voice కి గంట పైనే.</p>
+    <p><b>Rules:</b> మీ సొంత voice మాత్రమే clone చేయండి, వేరే వాళ్ళది ఎప్పుడూ వద్దు. Instagram లో post చేసేటప్పుడు <b>AI label ON</b> చేయండి: AI తో చేసిన realistic audio ని disclose చేయమని Meta చెప్తోంది.</p>
+    <p><a href="https://huggingface.co/ai4bharat/IndicF5">IndicF5 →</a> · <a href="https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/">Meta AI labels →</a></p>
+  </div>
+
+  <h2>5. 🎬 Video <small>· technical</small></h2>
+  <div class="card">
+    <p>Remotion (code తో motion graphics) తో 1080×1920 video. Music, sound effects కూడా code తోనే, −14 LUFS కి mix.</p>
+    <p>Remotion individuals కి free; companies కి license rules ఉన్నాయి, వాడే ముందు చూడండి: <a href="https://www.remotion.dev/license">Remotion license →</a></p>
+  </div>
+
+  <h2>6. 📅 Schedule <small>· easy</small></h2>
+  <div class="card">
+    <p>Buffer లో schedule: రోజుకు 2 Reels, 8 AM + 7:30 PM. Comment చేసిన వాళ్ళకి DM automatic గా వెళ్తుంది (DMGO).</p>
+  </div>
+
+  <h2>🛍️ Easy version: code లేకుండా, మీ shop కి</h2>
+  <div class="card">
+    <ol class="steps">
+      <li>ChatGPT / Claude లో కింది prompt తో script రాయించండి.</li>
+      <li>మీ phone లో మీరే voice record చేయండి (quiet room, phone 15 cm దూరం). Clone అవసరం లేదు.</li>
+      <li>Phone video editor లో: మీ shop products, screenshots, పెద్ద text. Face అవసరం లేదు.</li>
+      <li>40 seconds లోపు. మొదటి 3 seconds లోనే ఎవరి కోసం, ఏ problem అని చెప్పండి.</li>
+    </ol>
+  </div>
+  <div class="card copyable"><pre>You are a short-video scriptwriter for my business.
+Business: [what you sell] in [your town]. Customers: [who buys].
+Write a 35-second Instagram Reel script in simple Telugu, keeping English business words in English.
+- Line 1 = the hook: name who it's for and their problem. No "hello friends".
+- 5 short lines, one idea each, with on-screen text (max 5 words) for each line.
+- End: "comment [KEYWORD] చేయండి" + ask them to share with a friend.
+- No made-up numbers or customer stories. If a fact is needed, write [CHECK].</pre></div>
+
+  <p class="note"><b>నిజాయితీగా:</b> పూర్తి setup free కాదు (Claude paid plan, data API కి paise ఖర్చు), మొదట్లో technical పని ఉంది. Easy version తో మొదలుపెట్టండి; Reels నచ్చితే తర్వాత automate చేయొచ్చు.</p>
+  <p class="note">మీరు Reels చేయకుండా ఆపుతున్నది ఏది: camera, time, లేదా ideas? Instagram DM లో చెప్పండి.</p>
+
+  <a class="cta" href="https://www.instagram.com/aigrowthtelugu/">ఇలాంటి AI business tips కోసం <span>@aigrowthtelugu</span> ని follow చేయండి →</a>
+  <footer>AI Growth Telugu · AI for Sales, Marketing &amp; Business Growth in Telugu</footer>
+</main>
+<script src="../copy.js"></script>
+</body>
+</html>

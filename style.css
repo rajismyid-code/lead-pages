@@ -77,3 +77,4 @@ ol.steps li { margin: 8px 0; }
 }
 .cta span { color: var(--accent); }
 footer { margin-top: 40px; font-size: 13px; color: var(--muted); text-align: center; }
+h2 small { font-size: 14px; font-weight: 400; color: var(--muted); }
